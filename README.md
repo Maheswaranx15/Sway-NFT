@@ -25,8 +25,9 @@ https://app.fuel.network/tx/0x7c9d5b420c8d96109bd1e78f8ac98213d33bf6c495591ae2d5
 ## Mint details NO
 https://app.fuel.network/tx/0x978d83e06a423a37be42d7a422944ca8d3bc5f80065dc76d1e7e25ff8523702f/simple
 
-## output
-![alt text] /Users/mahesh/Documents/workspace/Sway-NFT/Output.png
+## output 
+![644F49B7-CAEB-4CB6-A6D8-A5C3E0D98D5D](https://github.com/Maheswaranx15/Sway-NFT/assets/59371819/4083f053-89d6-4615-85e9-f5a3a9721997)
+
 
 ## Overview
 
