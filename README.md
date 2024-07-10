@@ -14,6 +14,20 @@
     </a>
 </p>
 
+## Sample NFT YES contract ID : 0x766f2b303ca6b1165f1c18ff3e37aa09ed7cd3c2144ec34f4575dd3d5878d459
+
+
+## Sample NFT NO contract ID : 0x54e020a518561f23402305e294d9b5342add529a1f780a36325e237b862bc4f9
+
+## Mint details YES
+https://app.fuel.network/tx/0x7c9d5b420c8d96109bd1e78f8ac98213d33bf6c495591ae2d50bb9efb519a1f6/simple
+
+## Mint details NO
+https://app.fuel.network/tx/0x978d83e06a423a37be42d7a422944ca8d3bc5f80065dc76d1e7e25ff8523702f/simple
+
+## output
+![alt text] Output.jpeg
+
 ## Overview
 
 A non-fungible token (NFT) is a unique asset that has a maximum supply of one. On the Fuel Network, all NFTs are [Native Assets](https://docs.fuel.network/docs/sway/blockchain-development/native_assets). They are commonly associated with artwork / collectibles however there are many greater utilities beyond that which have yet to be written for the Fuel Network.
@@ -61,6 +75,8 @@ abi SRC3 {
 ```
 
 ### SRC-7
+
+
 
 The [SRC-7](https://github.com/FuelLabs/sway-standards/blob/master/SRCs/src-7.md) standard defines the ABI for retrieving metadata. This has been properly implemented. 
 
