@@ -10,7 +10,7 @@ async function main() {
   const provider = await Provider.create('https://testnet.fuel.network/v1/graphql');
 
   // Initialize wallet with a private key
-  const privateKey = '0xc04e97cba4e72075d02a62593871f6aabc4fb4d80b027f099b11718463f43a7f'; // Replace with your private key
+  const privateKey = 'XXXXXXX'; // Replace with your private key
   const wallet = Wallet.fromPrivateKey(privateKey, provider);
 
   const contract = new Contract(contractId, abi, wallet);
