@@ -27,6 +27,16 @@ async function main() {
 
   const result = await contract.functions.mint({ Address: address }, subId, amount).txParams({ gasPrice: 1 }).call();
   console.log("Mint result:", result);
+
+  const assetId = 'Asset ID'; // Replace with actual asset ID
+  const metadataKey = 'social:x'; 
+
+  const Setmetadata = await contract.functions.metadata(assetId, metadataKey).call();
+  console.log("Metadata:", Setmetadata);
+
+
+  const getmetadata = await contract.functions.metadata(assetId, metadataKey).get();
+  console.log("Metadata:", getmetadata);
 }
 
 main().catch(console.error);
