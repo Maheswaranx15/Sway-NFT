@@ -14,10 +14,16 @@
     </a>
 </p>
 
-## Sample NFT YES contract ID : 0x766f2b303ca6b1165f1c18ff3e37aa09ed7cd3c2144ec34f4575dd3d5878d459
+## Sample NFT YES contract ID :
+0x766f2b303ca6b1165f1c18ff3e37aa09ed7cd3c2144ec34f4575dd3d5878d459
 
 
-## Sample NFT NO contract ID : 0x54e020a518561f23402305e294d9b5342add529a1f780a36325e237b862bc4f9
+## Sample NFT NO contract ID:
+0x54e020a518561f23402305e294d9b5342add529a1f780a36325e237b862bc4f9
+
+## Asset Details 
+https://app.fuel.network/account/0x01aa306f84710152e391555668531f981c230578aa6b0d54c710514bc91474ae/assets
+
 
 ## Mint details YES
 https://app.fuel.network/tx/0x7c9d5b420c8d96109bd1e78f8ac98213d33bf6c495591ae2d50bb9efb519a1f6/simple
