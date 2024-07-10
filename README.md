@@ -26,7 +26,7 @@ https://app.fuel.network/tx/0x7c9d5b420c8d96109bd1e78f8ac98213d33bf6c495591ae2d5
 https://app.fuel.network/tx/0x978d83e06a423a37be42d7a422944ca8d3bc5f80065dc76d1e7e25ff8523702f/simple
 
 ## output
-![alt text] Output.jpeg
+![alt text] /Users/mahesh/Documents/workspace/Sway-NFT/Output.png
 
 ## Overview
 
