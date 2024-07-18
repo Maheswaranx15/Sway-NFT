@@ -54,7 +54,7 @@ The project implements and follows the [SRC-20; Native Asset](https://github.com
 
 
 ## output 
-![alt text] Output.jpg
+![Output](https://github.com/user-attachments/assets/526e3e03-1b69-4b17-a24b-b5756d474667)
 
 ### SRC-20
 
