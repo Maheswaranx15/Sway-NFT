@@ -1,7 +1,7 @@
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset=".docs/nft-logo_white.png">
-        <img alt="light theme" src=".docs/nft-logo_black.png">
+        <source media="(prefers-color-scheme: dark)" srcset="./nft-logo_white.png">
+        <img alt="light theme" src="./nft-logo_black.png">
     </picture>
 </p>
 
