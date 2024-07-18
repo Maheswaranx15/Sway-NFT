@@ -23,7 +23,7 @@ In this barebones NFT example project, there are a maximum of 100,000 NFTs that 
 ## Contract Testnet Deployment 
 
 ```
-Contract ID: 0xe741ac4c57cb7609e14e8f3db9143eb66192a003f109b491ec75d1e6a6e824cd<br />
+Contract ID: 0xe741ac4c57cb7609e14e8f3db9143eb66192a003f109b491ec75d1e6a6e824cd
 Deployed in block 00523f75
 
 ```
