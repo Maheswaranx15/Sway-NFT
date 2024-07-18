@@ -20,6 +20,34 @@ A non-fungible token (NFT) is a unique asset that has a maximum supply of one. O
 
 In this barebones NFT example project, there are a maximum of 100,000 NFTs that may be minted. Each NFT may contain any metadata the user desires to store. 
 
+## Contract Testnet Deployment 
+
+```
+Contract ID: 0xe741ac4c57cb7609e14e8f3db9143eb66192a003f109b491ec75d1e6a6e824cd
+Deployed in block 00523f75
+
+```
+## Mint details 
+
+NFT 1 : 
+transactionId: '0x62bb66438584d4036b385e7046b13ea5d8246c4f3076cb11760dd60759ff1b07'
+Explorer Link : https://app.fuel.network/tx/0x62bb66438584d4036b385e7046b13ea5d8246c4f3076cb11760dd60759ff1b07/simple
+
+NFT 2 :
+transactionId: '0xb415ada2a6fad8ae5d289fb7854bbad1328d97310f0dbdead5d672927bd70a8c'
+Explorer Link : https://app.fuel.network/tx/0xb415ada2a6fad8ae5d289fb7854bbad1328d97310f0dbdead5d672927bd70a8c/simple
+
+
+## Setting up NFT_metdata 
+NFT 1 :
+transactionId: '0x465f99deab4b06e0163a171c184311bd6be619ac1af388993cc7e87149a3ad16'
+Explorer Link : https://app.fuel.network/tx/0x465f99deab4b06e0163a171c184311bd6be619ac1af388993cc7e87149a3ad16/simple
+
+
+NFT 2 :
+transactionId: '0x23583429e80f37bb9bbadd3301acd932f688796796541d33c8d381737b102ef4'
+Explorer Link : https://app.fuel.network/tx/0x23583429e80f37bb9bbadd3301acd932f688796796541d33c8d381737b102ef4/simple
+
 ## Standards Implementations
 
 The project implements and follows the [SRC-20; Native Asset](https://github.com/FuelLabs/sway-standards/blob/master/SRCs/src-20.md), [SRC-3; Mint and Burn](https://github.com/FuelLabs/sway-standards/blob/master/SRCs/src-3.md), and [SRC-7; Metadata](https://github.com/FuelLabs/sway-standards/blob/master/SRCs/src-7.md) standards. It also uses the [Native Asset Library](https://fuellabs.github.io/sway-libs/book/asset/index.html) to implement the basic functionality behind the standards.  
