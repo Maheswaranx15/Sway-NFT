@@ -23,29 +23,29 @@ In this barebones NFT example project, there are a maximum of 100,000 NFTs that 
 ## Contract Testnet Deployment 
 
 ```
-Contract ID: 0xe741ac4c57cb7609e14e8f3db9143eb66192a003f109b491ec75d1e6a6e824cd
+Contract ID: 0xe741ac4c57cb7609e14e8f3db9143eb66192a003f109b491ec75d1e6a6e824cd<br />
 Deployed in block 00523f75
 
 ```
 ## Mint details 
 
 NFT 1 : 
-transactionId: '0x62bb66438584d4036b385e7046b13ea5d8246c4f3076cb11760dd60759ff1b07'
+transactionId: '0x62bb66438584d4036b385e7046b13ea5d8246c4f3076cb11760dd60759ff1b07'<br />
 Explorer Link : https://app.fuel.network/tx/0x62bb66438584d4036b385e7046b13ea5d8246c4f3076cb11760dd60759ff1b07/simple
 
 NFT 2 :
-transactionId: '0xb415ada2a6fad8ae5d289fb7854bbad1328d97310f0dbdead5d672927bd70a8c'
+transactionId: '0xb415ada2a6fad8ae5d289fb7854bbad1328d97310f0dbdead5d672927bd70a8c'<br />
 Explorer Link : https://app.fuel.network/tx/0xb415ada2a6fad8ae5d289fb7854bbad1328d97310f0dbdead5d672927bd70a8c/simple
 
 
 ## Setting up NFT_metdata 
 NFT 1 :
-transactionId: '0x465f99deab4b06e0163a171c184311bd6be619ac1af388993cc7e87149a3ad16'
+transactionId: '0x465f99deab4b06e0163a171c184311bd6be619ac1af388993cc7e87149a3ad16'<br />
 Explorer Link : https://app.fuel.network/tx/0x465f99deab4b06e0163a171c184311bd6be619ac1af388993cc7e87149a3ad16/simple
 
 
 NFT 2 :
-transactionId: '0x23583429e80f37bb9bbadd3301acd932f688796796541d33c8d381737b102ef4'
+transactionId: '0x23583429e80f37bb9bbadd3301acd932f688796796541d33c8d381737b102ef4'<br />
 Explorer Link : https://app.fuel.network/tx/0x23583429e80f37bb9bbadd3301acd932f688796796541d33c8d381737b102ef4/simple
 
 ## Standards Implementations
