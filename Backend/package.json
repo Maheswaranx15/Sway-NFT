@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "dotenv": "^16.4.5",
     "fuels": "^0.92.0"
   }
 }
