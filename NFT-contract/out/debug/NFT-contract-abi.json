@@ -49,12 +49,12 @@
       "components": [
         {
           "name": "Address",
-          "type": 15,
+          "type": 19,
           "typeArguments": null
         },
         {
           "name": "ContractId",
-          "type": 18,
+          "type": 22,
           "typeArguments": null
         }
       ],
@@ -83,17 +83,17 @@
         },
         {
           "name": "Bytes",
-          "type": 17,
+          "type": 21,
           "typeArguments": null
         },
         {
           "name": "Int",
-          "type": 22,
+          "type": 26,
           "typeArguments": null
         },
         {
           "name": "String",
-          "type": 21,
+          "type": 25,
           "typeArguments": null
         }
       ],
@@ -205,6 +205,30 @@
     },
     {
       "typeId": 15,
+      "type": "str[12]",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 16,
+      "type": "str[27]",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 17,
+      "type": "str[5]",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 18,
+      "type": "str[7]",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 19,
       "type": "struct Address",
       "components": [
         {
@@ -216,7 +240,7 @@
       "typeParameters": null
     },
     {
-      "typeId": 16,
+      "typeId": 20,
       "type": "struct AssetId",
       "components": [
         {
@@ -228,24 +252,24 @@
       "typeParameters": null
     },
     {
-      "typeId": 17,
+      "typeId": 21,
       "type": "struct Bytes",
       "components": [
         {
           "name": "buf",
-          "type": 20,
+          "type": 24,
           "typeArguments": null
         },
         {
           "name": "len",
-          "type": 22,
+          "type": 26,
           "typeArguments": null
         }
       ],
       "typeParameters": null
     },
     {
-      "typeId": 18,
+      "typeId": 22,
       "type": "struct ContractId",
       "components": [
         {
@@ -257,7 +281,7 @@
       "typeParameters": null
     },
     {
-      "typeId": 19,
+      "typeId": 23,
       "type": "struct OwnershipSet",
       "components": [
         {
@@ -269,7 +293,7 @@
       "typeParameters": null
     },
     {
-      "typeId": 20,
+      "typeId": 24,
       "type": "struct RawBytes",
       "components": [
         {
@@ -279,32 +303,32 @@
         },
         {
           "name": "cap",
-          "type": 22,
+          "type": 26,
           "typeArguments": null
         }
       ],
       "typeParameters": null
     },
     {
-      "typeId": 21,
+      "typeId": 25,
       "type": "struct String",
       "components": [
         {
           "name": "bytes",
-          "type": 17,
+          "type": 21,
           "typeArguments": null
         }
       ],
       "typeParameters": null
     },
     {
-      "typeId": 22,
+      "typeId": 26,
       "type": "u64",
       "components": null,
       "typeParameters": null
     },
     {
-      "typeId": 23,
+      "typeId": 27,
       "type": "u8",
       "components": null,
       "typeParameters": null
@@ -315,7 +339,7 @@
       "inputs": [
         {
           "name": "_asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         }
       ],
@@ -326,7 +350,7 @@
         "typeArguments": [
           {
             "name": "",
-            "type": 23,
+            "type": 27,
             "typeArguments": null
           }
         ]
@@ -494,7 +518,7 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         }
       ],
@@ -505,7 +529,7 @@
         "typeArguments": [
           {
             "name": "",
-            "type": 21,
+            "type": 25,
             "typeArguments": null
           }
         ]
@@ -679,7 +703,7 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         }
       ],
@@ -690,7 +714,7 @@
         "typeArguments": [
           {
             "name": "",
-            "type": 21,
+            "type": 25,
             "typeArguments": null
           }
         ]
@@ -865,7 +889,7 @@
       "name": "total_assets",
       "output": {
         "name": "",
-        "type": 22,
+        "type": 26,
         "typeArguments": null
       },
       "attributes": [
@@ -1007,7 +1031,7 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         }
       ],
@@ -1018,7 +1042,7 @@
         "typeArguments": [
           {
             "name": "",
-            "type": 22,
+            "type": 26,
             "typeArguments": null
           }
         ]
@@ -1215,7 +1239,7 @@
         },
         {
           "name": "amount",
-          "type": 22,
+          "type": 26,
           "typeArguments": null
         }
       ],
@@ -1463,7 +1487,7 @@
         },
         {
           "name": "amount",
-          "type": 22,
+          "type": 26,
           "typeArguments": null
         }
       ],
@@ -1697,12 +1721,12 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         },
         {
           "name": "key",
-          "type": 21,
+          "type": 25,
           "typeArguments": null
         }
       ],
@@ -2066,12 +2090,12 @@
       "inputs": [
         {
           "name": "_asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         },
         {
           "name": "_decimals",
-          "type": 23,
+          "type": 27,
           "typeArguments": null
         }
       ],
@@ -2160,12 +2184,12 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         },
         {
           "name": "name",
-          "type": 21,
+          "type": 25,
           "typeArguments": null
         }
       ],
@@ -2380,12 +2404,12 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         },
         {
           "name": "symbol",
-          "type": 21,
+          "type": 25,
           "typeArguments": null
         }
       ],
@@ -2600,12 +2624,12 @@
       "inputs": [
         {
           "name": "asset",
-          "type": 16,
+          "type": 20,
           "typeArguments": null
         },
         {
           "name": "key",
-          "type": 21,
+          "type": 25,
           "typeArguments": null
         },
         {
@@ -3491,7 +3515,7 @@
       "logId": "16280289466020123285",
       "loggedType": {
         "name": "",
-        "type": 19,
+        "type": 23,
         "typeArguments": []
       }
     }
@@ -3502,7 +3526,7 @@
       "name": "MAX_SUPPLY",
       "configurableType": {
         "name": "",
-        "type": 22,
+        "type": 26,
         "typeArguments": null
       },
       "offset": 49128

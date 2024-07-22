@@ -57,6 +57,7 @@ storage {
     symbol: StorageMap<AssetId, StorageString> = StorageMap {},
     /// The metadata associated with a particular asset.
     ///
+    svg_images: StorageMap<AssetId, StorageString> = StorageMap {},
     /// # Additional Information
     ///
     /// In this NFT contract, there is no metadata provided at compile time. All metadata
@@ -65,6 +66,16 @@ storage {
 }
 
 configurable {
+     /// The decimals of every asset minted by this contract.
+    DECIMALS: u8 = 0u8,
+    /// The name of every asset minted by this contract.
+    NAME: str[7] = __to_str_array("MyAsset"),
+    /// The symbol of every asset minted by this contract.
+    SYMBOL: str[5] = __to_str_array("MYAST"),
+    /// The metadata for the "social:x" key.
+    SOCIAL_X: str[12] = __to_str_array("fuel_network"),
+    /// The metadata for the "site:forum" key.
+    SITE_FORUM: str[27] = __to_str_array("https://forum.fuel.network/"),
     /// The maximum number of NFTs that may be minted.
     MAX_SUPPLY: u64 = 3,
 }
