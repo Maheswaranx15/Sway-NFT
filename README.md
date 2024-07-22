@@ -1,19 +1,3 @@
-<p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./nft-logo_white.png">
-        <img alt="light theme" src="./nft-logo_black.png">
-    </picture>
-</p>
-
-<p align="center">
-    <a href="https://crates.io/crates/forc/0.60.0" alt="forc">
-        <img src="https://img.shields.io/badge/forc-v0.60.0-orange" />
-    </a>
-    <a href="https://crates.io/crates/fuel-core/0.26.0" alt="fuel-core">
-        <img src="https://img.shields.io/badge/fuel--core-v0.26.0-yellow" />
-    </a>
-</p>
-
 ## Overview
 A non-fungible token (NFT) is a unique asset that has a maximum supply of one. On the Fuel Network.
 
