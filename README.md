@@ -9,7 +9,7 @@ Deployed in block 00523f75 <br />
 Explorer Link : https://app.fuel.network/contract/0xcb10903dcc6cd70bb2368843b9872c22795fa2c0feb938e8c54a975d6283dc71/assets
 
 
-## Owner initilkization
+## Owner initilization
 
 transactionId: '0xa24f17127bb6c6720559316c1fbaa0acfad6db70d7ef32ad3b49089678a8b87a'<br />
 Explorer Link : https://app.fuel.network/tx/0xc0118a6d94159ec23ae8f88a61744b7746cac139c028d1a69d7eec7e3df2a46e/simple
