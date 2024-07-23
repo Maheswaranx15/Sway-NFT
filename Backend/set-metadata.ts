@@ -1,4 +1,4 @@
-import { getMintedAssetId } from "fuels";
+// import { getMintedAssetId } from "fuels";
 
 const { Provider, Wallet, Contract, getRandomB256 } = require('fuels');
 const { abi } = require('./abi');
@@ -22,7 +22,7 @@ async function main() {
   // // Define assetId and metadataKey
   const assetId = { bits: '0x983069a830b1a9fbfc258470d41e73c11871ec48a062ca3a34e5e594bc63b43b' }; // Replace with actual asset ID
   let subID = '' //get sub id from asset mint transaction
-  const mintedAssetId = getMintedAssetId(subID, contract.id.toB256());
+  // const mintedAssetId = getMintedAssetId(subID, contract.id.toB256());
   const metadataKey = 'image:png';
   const keyvalue = 'https://arweave.net/fKgGBtyEk4XUo07r9sCMNrIlwOguL4aax6rMXFRJHJQ'
 
@@ -46,6 +46,12 @@ async function main() {
   const setsymbol = await contract.functions.set_symbol(assetId,nftsymbol).txParams({ gasPrice: 1 }).call();
   let setsymboldata = await setsymbol.waitForResult();
   console.log("setsymboldata:",setsymboldata);
+
+  const getsymbol = await contract.functions.symbol(assetId).get()
+  console.log("Symbol of the Asset: ",getsymbol.value)
+
+  const getname = await contract.functions.name(assetId).get()
+  console.log("Symbol of the Asset: ",getname.value)
 }
 
 main().catch(console.error);
