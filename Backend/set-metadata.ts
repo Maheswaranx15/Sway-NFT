@@ -11,7 +11,7 @@ async function main() {
   // Initialize wallet with a private key
   // const privateKey = ""; // Replace with your Asset holder private key
 
-  const privateKey =  '089634fdd0719293d72abc10cf06331e4b0992350c502860951ffb2530ae8521'  // Replace with your owner private key
+  const privateKey =  ''  // Replace with your owner private key
   const wallet = Wallet.fromPrivateKey(privateKey, provider);
   const contract = new Contract(contractId, abi, wallet);
   
