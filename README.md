@@ -52,7 +52,7 @@ transactionId: '0xac5cf8151d82a3bf5f9f4170e9c3379c6fb5a9b3cc9206b3389841e55ef100
 Explorer Link : https://app.fuel.network/tx/0xac5cf8151d82a3bf5f9f4170e9c3379c6fb5a9b3cc9206b3389841e55ef10046/simple
 
 ## symbol-output
-![Model](Sway-NFT/Backend/output/getMetdata.png)
+![Model](https://github.com/Maheswaranx15/Sway-NFT/blob/main/Backend/output/getMetdata.png)
 
 ## Project structure
 
