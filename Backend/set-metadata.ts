@@ -1,3 +1,5 @@
+import { getMintedAssetId } from "fuels";
+
 const { Provider, Wallet, Contract, getRandomB256 } = require('fuels');
 const { abi } = require('./abi');
 
@@ -7,7 +9,9 @@ async function main() {
   const provider = await Provider.create('https://testnet.fuel.network/v1/graphql');
 
   // Initialize wallet with a private key
-  const privateKey = ""; // Replace with your private key
+  // const privateKey = ""; // Replace with your Asset holder private key
+
+  const privateKey =  ''  // Replace with your owner private key
   const wallet = Wallet.fromPrivateKey(privateKey, provider);
   const contract = new Contract(contractId, abi, wallet);
   
@@ -16,19 +20,32 @@ async function main() {
   console.log("Value of Total Assets:", Number(value));
 
   // // Define assetId and metadataKey
-  const assetId = { bits: '0x0356e6032a05525dc91de9f4c46b8bc4702231729e72abb37987801ae2256cd2' }; // Replace with actual asset ID
+  const assetId = { bits: '0x983069a830b1a9fbfc258470d41e73c11871ec48a062ca3a34e5e594bc63b43b' }; // Replace with actual asset ID
+  let subID = '' //get sub id from asset mint transaction
+  const mintedAssetId = getMintedAssetId(subID, contract.id.toB256());
   const metadataKey = 'image:png';
   const keyvalue = 'https://arweave.net/fKgGBtyEk4XUo07r9sCMNrIlwOguL4aax6rMXFRJHJQ'
 
   // Create the Metadata::String variant
   const metadataEnum = { String: keyvalue };
-
+  let Nftname = 'Cryptostage-NFT'
+  let nftsymbol = 'CRYP-NO'
+  
   // Call set_metadata function with the correct parameters
-  // const metadata = await contract.functions.set_metadata(assetId,metadataKey,metadataEnum).txParams({ gasPrice: 1 }).call();
-  // console.log("Metadata:", metadata);
+  const setmetadata = await contract.functions.set_metadata(assetId,metadataKey,metadataEnum).txParams({ gasPrice: 1 }).call();
+  let setmetadatatxn = await setmetadata.waitForResult();
+  console.log("Metadata:", setmetadatatxn);
 
-  const metadata = await contract.functions.metadata(assetId, metadataKey).get();
-  console.log("Metadata:",metadata.value);
+  const getmetadata = await contract.functions.metadata(assetId, metadataKey).get();
+  console.log("Metadata:",getmetadata.value);
+
+  const setname = await contract.functions.set_name(assetId,Nftname).txParams({ gasPrice: 1 }).call();
+  let setnamedata = await setname.waitForResult();
+  console.log("setnamedata:",setnamedata) 
+
+  const setsymbol = await contract.functions.set_symbol(assetId,nftsymbol).txParams({ gasPrice: 1 }).call();
+  let setsymboldata = await setsymbol.waitForResult();
+  console.log("setsymboldata:",setsymboldata);
 }
 
 main().catch(console.error);

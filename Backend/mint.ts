@@ -9,6 +9,7 @@ async function main() {
   // Initialize wallet with a private key
   const privateKey = ''; // Replace with your private key
   const wallet = Wallet.fromPrivateKey(privateKey, provider);
+  
   const contract = new Contract(contractId, abi, wallet);
   const { value } = await contract.functions.total_assets().get();
   console.log("Value of Total Assets:", Number(value));
@@ -19,8 +20,25 @@ async function main() {
   const subId = getRandomB256();
   console.log(recepient,subId,amount)
   const result = await contract.functions.mint({ Address: recepient }, subId, amount).txParams({ gasPrice: 1 }).call();
-  console.log("Mint result:", result);
+  console.log("Mint result:", await result.waitForResult());
 
+
+  let getOwner = await contract.functions.owner().get()
+  console.log(getOwner.value)
+
+  const ownerAddress = {
+    Address: {
+      bits: '0x49eae041aa67d832f3f55b210a2f538959c15168934adc040fcd23a5f3d04860'
+    }
+  };
+
+  try {
+    let initializeOwner = await contract.functions.constructor(ownerAddress).txParams({ gasPrice: 1 }).call();
+    let ownership = await initializeOwner.waitForResult();
+    console.log("Ownership initialized:", ownership);
+  } catch (error) {
+    console.error("Failed to initialize owner:", error);
+  }
 }
 
 main().catch(console.error);
