@@ -11,7 +11,7 @@ async function main() {
   // Initialize wallet with a private key
   // const privateKey = ""; // Replace with your Asset holder private key
 
-  const privateKey =  ''  // Replace with your owner private key
+  const privateKey =  '089634fdd0719293d72abc10cf06331e4b0992350c502860951ffb2530ae8521'  // Replace with your owner private key
   const wallet = Wallet.fromPrivateKey(privateKey, provider);
   const contract = new Contract(contractId, abi, wallet);
   
@@ -32,26 +32,26 @@ async function main() {
   let nftsymbol = 'CRYP-NO'
   
   // Call set_metadata function with the correct parameters
-  const setmetadata = await contract.functions.set_metadata(assetId,metadataKey,metadataEnum).txParams({ gasPrice: 1 }).call();
-  let setmetadatatxn = await setmetadata.waitForResult();
-  console.log("Metadata:", setmetadatatxn);
+  // const setmetadata = await contract.functions.set_metadata(assetId,metadataKey,metadataEnum).txParams({ gasPrice: 1 }).call();
+  // let setmetadatatxn = await setmetadata.waitForResult();
+  // console.log("Metadata:", setmetadatatxn);
 
-  const getmetadata = await contract.functions.metadata(assetId, metadataKey).get();
-  console.log("Metadata:",getmetadata.value);
+  // const getmetadata = await contract.functions.metadata(assetId, metadataKey).get();
+  // console.log("Metadata:",getmetadata.value);
 
-  const setname = await contract.functions.set_name(assetId,Nftname).txParams({ gasPrice: 1 }).call();
-  let setnamedata = await setname.waitForResult();
-  console.log("setnamedata:",setnamedata) 
+  // const setname = await contract.functions.set_name(assetId,Nftname).txParams({ gasPrice: 1 }).call();
+  // let setnamedata = await setname.waitForResult();
+  // console.log("setnamedata:",setnamedata) 
 
-  const setsymbol = await contract.functions.set_symbol(assetId,nftsymbol).txParams({ gasPrice: 1 }).call();
-  let setsymboldata = await setsymbol.waitForResult();
-  console.log("setsymboldata:",setsymboldata);
+  // const setsymbol = await contract.functions.set_symbol(assetId,nftsymbol).txParams({ gasPrice: 1 }).call();
+  // let setsymboldata = await setsymbol.waitForResult();
+  // console.log("setsymboldata:",setsymboldata);
 
-  const getsymbol = await contract.functions.symbol(assetId).get()
-  console.log("Symbol of the Asset: ",getsymbol.value)
+  // const getsymbol = await contract.functions.symbol(assetId).get()
+  // console.log("Symbol of the Asset: ",getsymbol.value)
 
   const getname = await contract.functions.name(assetId).get()
-  console.log("Symbol of the Asset: ",getname.value)
+  console.log("Name of the Asset: ",getname.value)
 }
 
 main().catch(console.error);
