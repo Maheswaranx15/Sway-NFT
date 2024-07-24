@@ -77,7 +77,7 @@ configurable {
     /// The metadata for the "site:forum" key.
     SITE_FORUM: str[27] = __to_str_array("https://forum.fuel.network/"),
     /// The maximum number of NFTs that may be minted.
-    MAX_SUPPLY: u64 = 3,
+    MAX_SUPPLY: u64 = 15,
 }
 
 impl SRC20 for Contract {
