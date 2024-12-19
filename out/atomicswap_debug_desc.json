@@ -1,0 +1,58 @@
+{
+    "version": 9,
+    "compilerVersion": "1.19.0+commit.72eaeba",
+    "contract": "HelloWorld",
+    "md5": "076287e80b5a55a55be193d7cf78d5c8",
+    "structs": [
+        {
+            "name": "SortedItem",
+            "params": [
+                {
+                    "name": "item",
+                    "type": "T"
+                },
+                {
+                    "name": "idx",
+                    "type": "int"
+                }
+            ],
+            "genericTypes": [
+                "T"
+            ]
+        }
+    ],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "unlock",
+            "index": 0,
+            "params": [
+                {
+                    "name": "message",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "hash",
+                    "type": "Sha256"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///Users/mahesh/Documents/workspace/Sway-NFT/atomicswap.scrypt",
+    "hex": "<hash>5179a85179877777",
+    "sourceMapFile": ""
+}

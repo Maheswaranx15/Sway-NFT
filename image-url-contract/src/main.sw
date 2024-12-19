@@ -1,25 +1,26 @@
 contract;
 
-storage {
-    image_url: str[256] = ""
-}
-
-abi ImageUrlContract {
+abi Counter {
     #[storage(read, write)]
-    fn set_image_url(url: str[256]);
+    fn increment();
 
     #[storage(read)]
-    fn get_image_url() -> str[256];
+    fn count() -> u64;
 }
 
-impl ImageUrlContract for Contract {
-    #[storage(read, write)]
-    fn set_image_url(url: str[256]) {
-        storage.image_url.write(url);
+storage {
+    counter: u64 = 0,
+}
+
+impl Counter for Contract {
+    #[storage(read)]
+    fn count() -> u64 {
+        storage.counter.read()
     }
 
-    #[storage(read)]
-    fn get_image_url() -> str[256] {
-        storage.image_url.read()
+    #[storage(read, write)]
+    fn increment() {
+        let incremented = storage.counter.read() + 1;
+        storage.counter.write(incremented);
     }
 }
