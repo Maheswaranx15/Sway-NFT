@@ -1,24 +1,23 @@
 import {
     assert,
-    ByteString,
     method,
     prop,
     sha256,
-    Sha256,
     SmartContract,
-} from 'scrypt-ts'
+} from 'scrypt-ts';
 
 export class AuctionContract extends SmartContract {
     @prop()
-    hash: Sha256
+    hash: string; // Store the hash as a string
 
-    constructor(hash: Sha256) {
-        super(...arguments)
-        this.hash = hash
+    constructor(hash: string) {
+        super(...arguments); // Pass arguments to the base class
+        this.hash = hash;
     }
 
     @method()
-    public unlock(message: ByteString) {
-        assert(sha256(message) == this.hash, 'Hash does not match')
+    public unlock(message: string): void {
+        // Assert the hash matches the message
+        assert(sha256(message) === this.hash);
     }
 }
