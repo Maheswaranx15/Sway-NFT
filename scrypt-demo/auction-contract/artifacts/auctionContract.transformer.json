@@ -1,0 +1,50 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "message": "Untransformable type `string` here, please use type `ByteString` instead",
+      "srcRange": {
+        "fileName": "/Users/mahesh/Documents/workspace/Sway-NFT/scrypt-demo/auction-contract/src/contracts/auctionContract.ts",
+        "start": {
+          "line": 11,
+          "character": 11
+        },
+        "end": {
+          "line": 11,
+          "character": 17
+        }
+      }
+    },
+    {
+      "message": "Untransformable type `string` here, please use type `ByteString` instead",
+      "srcRange": {
+        "fileName": "/Users/mahesh/Documents/workspace/Sway-NFT/scrypt-demo/auction-contract/src/contracts/auctionContract.ts",
+        "start": {
+          "line": 13,
+          "character": 23
+        },
+        "end": {
+          "line": 13,
+          "character": 29
+        }
+      }
+    },
+    {
+      "message": "public methods cannot have a return type",
+      "srcRange": {
+        "fileName": "/Users/mahesh/Documents/workspace/Sway-NFT/scrypt-demo/auction-contract/src/contracts/auctionContract.ts",
+        "start": {
+          "line": 19,
+          "character": 37
+        },
+        "end": {
+          "line": 19,
+          "character": 41
+        }
+      }
+    }
+  ],
+  "scryptfile": "auctionContract.scrypt",
+  "sourceMapFile": "auctionContract.scrypt.map",
+  "ctxMethods": []
+}
