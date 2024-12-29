@@ -1,0 +1,58 @@
+{
+    "version": 9,
+    "compilerVersion": "1.19.0+commit.72eaeba",
+    "contract": "Test",
+    "md5": "ff5fd144c4c085f849c25dd15d8970dc",
+    "structs": [
+        {
+            "name": "SortedItem",
+            "params": [
+                {
+                    "name": "item",
+                    "type": "T"
+                },
+                {
+                    "name": "idx",
+                    "type": "int"
+                }
+            ],
+            "genericTypes": [
+                "T"
+            ]
+        }
+    ],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "equal",
+            "index": 0,
+            "params": [
+                {
+                    "name": "y",
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///Users/mahesh/Documents/workspace/Sway-NFT/scrypt-demo/learn.scrypt",
+    "hex": "00<x>610079527a75517a7561517951799c7777",
+    "sourceMapFile": ""
+}

@@ -1,0 +1,11 @@
+contract Calculator {
+    // Variable to store the last computed sum value
+    int sumValue;
+
+    // Function to add two integers
+    public function add(int x, int y) {
+        require(this.sumValue == x + y) ;// Store the sum
+    }
+
+
+}
