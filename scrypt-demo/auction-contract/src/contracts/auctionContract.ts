@@ -8,7 +8,7 @@ import {
 
 export class AuctionContract extends SmartContract {
     @prop()
-    hash: string; // Store the hash as a string
+    hash: string;
 
     constructor(hash: string) {
         super(...arguments); 

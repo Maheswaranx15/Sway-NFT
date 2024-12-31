@@ -21,7 +21,7 @@ describe('Test SmartContract `AuctionContract`', () => {
 
         const call = async () => {
             const callRes = await instance.methods.unlock(
-                toByteString('hello world', true)
+                toByteString('hello', true)
             )
             
             console.log(`Called "unlock" method: ${callRes.tx.id}`)
