@@ -8,4 +8,8 @@ contract Test {
     public function equal(int y) {
         require(y == this.x);
     }
+
+    public function sum(int y , int z) {
+        require(y + this.x == z);
+    }
 }
