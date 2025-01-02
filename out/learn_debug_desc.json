@@ -2,7 +2,7 @@
     "version": 9,
     "compilerVersion": "1.19.0+commit.72eaeba",
     "contract": "Test",
-    "md5": "ff5fd144c4c085f849c25dd15d8970dc",
+    "md5": "399e6a886738df27142cfb6f1032edec",
     "structs": [
         {
             "name": "SortedItem",
@@ -41,6 +41,21 @@
             ]
         },
         {
+            "type": "function",
+            "name": "sum",
+            "index": 1,
+            "params": [
+                {
+                    "name": "y",
+                    "type": "int"
+                },
+                {
+                    "name": "z",
+                    "type": "int"
+                }
+            ]
+        },
+        {
             "type": "constructor",
             "params": [
                 {
@@ -53,6 +68,6 @@
     "stateProps": [],
     "buildType": "debug",
     "file": "file:///Users/mahesh/Documents/workspace/Sway-NFT/scrypt-demo/learn.scrypt",
-    "hex": "00<x>610079527a75517a7561517951799c7777",
+    "hex": "00<x>610079527a75517a75615179008763527951799c777777675179518763537951799353799c7777777767006868",
     "sourceMapFile": ""
 }
