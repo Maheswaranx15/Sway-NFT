@@ -1,15 +1,15 @@
 contract Test {
     int x;
 
-    constructor(int x) {
-        this.x = x;
-    }
-
     public function equal(int y) {
         require(y == this.x);
     }
 
-    public function sum(int y , int z) {
-        require(y + this.x == z);
+    public function smaller(int y) {
+        require(y < this.x);
+    }
+
+    public function larger(int y) {
+        require(y > this.x);
     }
 }
