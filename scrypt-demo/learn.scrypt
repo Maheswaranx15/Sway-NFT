@@ -12,4 +12,12 @@ contract Test {
     public function larger(int y) {
         require(y > this.x);
     }
+
+    public function smalfler(int y) {
+        require(y < this.x);
+    }
+
+    public function largfer(int y) {
+        require(y > this.x);
+    }
 }
