@@ -1,0 +1,27 @@
+contract HashPuzzle {
+    Ripemd160 hash;
+
+    public function spend(bytes preimage) {
+        require(hash160(preimage) == this.hash);
+    }
+}
+
+contract Pay2PubKey {
+    PubKey pubKey;
+
+    public function spend(Sig sig) {
+        require(checkSig(sig, this.pubKey));
+    }
+}
+
+contract Pay2PubKeyHash {
+    Ripemd160 pubKeyHash;
+
+    public function spend(Sig sig, PubKey pubKey) {
+        HashPuzzle hp = new HashPuzzle(this.pubKeyHash);
+        require(hp.spend(pubKey));
+
+        Pay2PubKey p2pk = new Pay2PubKey(pubKey);
+        require(p2pk.spend(sig));
+    }
+}
