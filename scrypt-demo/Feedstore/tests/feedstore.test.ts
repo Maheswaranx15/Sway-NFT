@@ -62,41 +62,4 @@ describe('Test SmartContract `Feedstore`', () => {
         }
         await expect(call()).not.to.be.rejected
     })
-    // it('should pass the `updateContent` method with valid current message.', async () => {
-    //     const newContent = toByteString('updated content', true)
-    
-    //     const call = async () => {
-    //         try {
-    //             // Call the updateContent method and ensure it completes without errors
-    //             const callRes = await instance.methods.updateContent(newContent, initialMessage)
-    //             console.log(`Called "updateContent" method successfully with transaction ID: ${callRes.tx.id}`)
-    //             // Ensure no rejection occurs
-    //             expect(callRes.tx.id).to.be.a('string')
-    //         } catch (err) {
-    //             // If an error is thrown, fail the test with the error message
-    //             console.error('Error during updateContent:', err)
-    //             throw err
-    //         }
-    //     }
-    
-    //     // Ensure the method does not reject
-    //     await expect(call()).not.to.be.rejected
-    // })
-
-    // it('should throw error when updating content with incorrect current message.', async () => {
-    //     const newContent = toByteString('updated content', true)
-    //     const incorrectCurrentMessage = toByteString('wrong current message', true)
-
-    //     const call = async () => instance.methods.updateContent(newContent, incorrectCurrentMessage)
-    //     await expect(call()).to.be.rejectedWith(/Hash of current message does not match stored hash/)
-    // })
-
-    // it('should reflect updated hash after `updateContent`.', async () => {
-    //     const newContent = toByteString('final updated content', true)
-    //     await instance.methods.updateContent(newContent, initialMessage)
-
-    //     // Check updated state
-    //     const updatedHash = sha256(newContent)
-    //     expect(instance.hash).to.equal(updatedHash)
-    // })
 })

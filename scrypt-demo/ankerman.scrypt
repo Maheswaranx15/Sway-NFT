@@ -35,4 +35,9 @@ contract Ackermann {
     public function unlock(int y) {
         require(y == this.ackermann(this.a, this.b));
     }
+
+     // y = 5
+    public function unlocks_acker(int y) {
+        require(y == this.ackermann(this.a, this.b));
+    }
 }
