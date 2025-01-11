@@ -2,4 +2,12 @@ contract demo {
     public function main (int x) {
         require(x==0);
     }
+
+    public function compare (int x , int y) {
+        require(x == y);
+    }
+    
+    public function divide (int x , int y , int z) {
+        require(x / y == z);
+    }
 }
