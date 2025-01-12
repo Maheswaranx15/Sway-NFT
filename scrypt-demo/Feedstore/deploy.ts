@@ -122,7 +122,7 @@
 // TV unit 10, modular kitchen(opt),    
 
 
-import { HashedSetState } from './dist/contracts/usestate';
+import { HashedSetState } from './src/contracts/usestate';
 import {
     bsv,
     TestWallet,
@@ -148,13 +148,13 @@ if (!process.env.PRIVATE_KEY) {
 
 // Read the private key from the .env file
 const privateKey = bsv.PrivateKey.fromWIF(process.env.PRIVATE_KEY || '');
-
+const provider = new DefaultProvider({
+    network: bsv.Networks.testnet,
+  })
 // Prepare signer
 const signer = new TestWallet(
     privateKey,
-    new DefaultProvider({
-        network: bsv.Networks.testnet,
-    })
+    provider
 );
 
 // Function to compile the contract
@@ -197,8 +197,9 @@ async function callAddOnChain(txId: string, atOutputIndex = 0){
 
     // console.log('Fetching transaction...');
     const tx = await signer.connectedProvider.getTransaction(txId);
-    // console.log('Transaction fetched:', tx);
-
+    const instance = HashedSetState.fromTx(tx, 0)
+    // console.log('instance fetched:', instance);
+    instance.connect(signer)
     // Fetch the current state of the hashedset from the transaction
     const currentSet = new HashedSet<ByteString>();
     currentSet.add(
@@ -208,13 +209,17 @@ async function callAddOnChain(txId: string, atOutputIndex = 0){
         )
     );
 
-    // Reconstruct the contract instance with the current state of the hashedset
-    const instance = HashedSetState.fromTx(tx, atOutputIndex, currentSet);
+    const message = toByteString('https://gateway.pinata.cloud/ipfs/QmbsxrAkDexeQuu6cC1NoaJeG1oH1864gySVhbJk5nZ6ow/7001.mp4', true)
+    const { tx: callTx } = await instance.methods.add(message)
+    console.log('Demo contract "unlock" called: ', callTx.id)
 
-    console.log('Reconstructed contract instance with current state:', currentSet);
+    // Reconstruct the contract instance with the current state of the hashedset
+    // const instance = HashedSetState.fromTx(tx, atOutputIndex);
+
+    // console.log('Reconstructed contract instance with current state:', currentSet);
 
     // Connect the instance to the signer
-    await instance.connect(signer);
+    // await instance.connect(signer);
 
     // Create the next instance with the updated state
     // const nextInstance = instance.next();
