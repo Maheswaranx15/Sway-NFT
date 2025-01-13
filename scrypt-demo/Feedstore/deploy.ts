@@ -109,17 +109,7 @@
 // //     await main()
 // // })()
 
-// // 3b66b002b4ab0c9e735e6b08f4a7441602ab42baccf92382be6d564afc108ddf
-
-
- 
-// sofa 2 80L,
-// Wardrobe 40 , TV unit , bed , pooja unit 1.5 L
-// bed matteress 40
-// 2 AC 50 ,  1 TV 50, washing machine 15, 
-// dinig table 15, 
-//  60, 4 pillow 7,
-// TV unit 10, modular kitchen(opt),    
+// // 3b66b002b4ab0c9e735e6b08f4a7441602ab42baccf92382be6d564afc108ddf  
 
 
 import { HashedSetState } from './src/contracts/usestate';
@@ -158,39 +148,39 @@ const signer = new TestWallet(
 );
 
 // Function to compile the contract
-async function compileContract() {
-    try {
-        console.log('Compiling the contract...');
-        await HashedSetState.compile();
-        console.log('Contract compiled successfully.');
-    } catch (error) {
-        console.error('Error compiling the contract:', error);
-        throw error;
-    }
-}
+// async function compileContract() {
+//     try {
+//         console.log('Compiling the contract...');
+//         await HashedSetState.compile();
+//         console.log('Contract compiled successfully.');
+//     } catch (error) {
+//         console.error('Error compiling the contract:', error);
+//         throw error;
+//     }
+// }
 
 // Deploy function
-async function deploy() {
-    // Compile the contract
-    await compileContract();
+// async function deploy() {
+//     // Compile the contract
+//     await compileContract();
 
-    // Load the contract artifact
-    await HashedSetState.loadArtifact();
+//     // Load the contract artifact
+//     await HashedSetState.loadArtifact();
 
-    // Initialize contract state
-    const set = new HashedSet<ByteString>();
-    const stateSet = new HashedSetState(set);
+//     // Initialize contract state
+//     const set = new HashedSet<ByteString>();
+//     const stateSet = new HashedSetState(set);
 
-    // Connect to a signer
-    await stateSet.connect(signer);
+//     // Connect to a signer
+//     await stateSet.connect(signer);
 
-    // Define initial balance for the contract (in satoshis)
-    const initBalance = 10000;
+//     // Define initial balance for the contract (in satoshis)
+//     const initBalance = 10000;
 
-    // Contract deployment
-    const deployTx = await stateSet.deploy(initBalance);
-    console.log(`Usestate contract deployed: ${deployTx.id}`);
-}
+//     // Contract deployment
+//     const deployTx = await stateSet.deploy(initBalance);
+//     console.log(`Usestate contract deployed: ${deployTx.id}`);
+// }
 async function callAddOnChain(txId: string, atOutputIndex = 0){
     // Compile the contract before using it
     await compileContract();
